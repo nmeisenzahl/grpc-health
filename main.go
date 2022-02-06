@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	serverAddress := "0.0.0.0:5000"
+	serverAddress := "0.0.0.0:9000"
 
 	server, err := server.New(serverAddress)
 	if err != nil {

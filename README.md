@@ -25,6 +25,7 @@ spec:
     spec:
       containers:
       - image: ghcr.io/nmeisenzahl/grpc-health/grpc-health:latest
+        imagePullPolicy: Always
         name: grpc-health
         ports:
         - containerPort: 5000
