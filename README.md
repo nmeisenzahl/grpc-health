@@ -28,15 +28,15 @@ spec:
         imagePullPolicy: Always
         name: grpc-health
         ports:
-        - containerPort: 5000
+        - containerPort: 3000
         resources: {}
         livenessProbe:
             grpc:
-                port: 5000
+                port: 3000
             initialDelaySeconds: 10
         readinessProbe:
             grpc:
-                port: 5000
+                port: 3000
             initialDelaySeconds: 10
 status: {}
 EOF
