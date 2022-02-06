@@ -30,13 +30,13 @@ spec:
         - containerPort: 5000
         resources: {}
         livenessProbe:
-        grpc:
-            port: 5000
-        initialDelaySeconds: 10
+            grpc:
+                port: 5000
+            initialDelaySeconds: 10
         readinessProbe:
-        grpc:
-            port: 5000
-        initialDelaySeconds: 10
+            grpc:
+                port: 5000
+            initialDelaySeconds: 10
 status: {}
 EOF
 ```
