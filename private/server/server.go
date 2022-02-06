@@ -21,7 +21,7 @@ func New(address string) (*server, error) {
 		srv:     grpc.NewServer(),
 		address: address,
 	}
-	grpc_health_v1.RegisterHealthServer(s.srv, &server{})
+	grpc_health_v1.RegisterHealthServer(s.srv, &s)
 	reflection.Register(s.srv)
 	return &s, nil
 }
